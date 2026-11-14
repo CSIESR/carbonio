@@ -1,0 +1,4 @@
+carbonio.conf
+*.zone
+*secrets*
+*.log

@@ -1,0 +1,14 @@
+# carbonio.conf - normalement écrit par configure.sh. Copier en carbonio.conf pour une installation sans questions.
+MAIL_DOMAIN=example.org          # domaine des adresses
+FQDN=mail.example.org            # nom du serveur, DANS le domaine
+SERVER_IP=203.0.113.25           # adresse portée par l'interface du serveur
+PUBLIC_IP=203.0.113.25           # adresse publique (A et PTR) ; différente seulement derrière un NAT
+DNS_SERVERS=''                   # résolveurs imposés, séparés par des espaces ; vide = inchangés
+NTP_SERVER=''                    # vide = pool public
+TIMEZONE=Europe/Paris
+ADMIN_SRC='198.51.100.0/24'      # réseaux autorisés pour SSH et la console 6071 ; vide = SSH à tous, 6071 fermé
+LE_ENABLE=yes                    # certificat Let's Encrypt
+LE_EMAIL=''                      # adresse pour les avis Let's Encrypt ; vide = aucune
+DKIM_SELECTOR=mail2026
+OPEN_IMAP_143=yes
+OPEN_POP3=no
